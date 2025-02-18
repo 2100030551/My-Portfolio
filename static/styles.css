@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Disable all scrolling */
+}
+
+#wallpaper {
+    height: 50vh; /* 50% of the screen height */
+    background-image: url('ta.jpg'); /* Your wallpaper image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 50px; /* Adjust this value to move it down */
+}
+
+
+/* Top Navbar */
+#top-navbar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#top-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#top-navbar ul li {
+    margin: 0 20px;
+}
+
+#top-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#top-navbar ul li a:hover {
+    color: lightblue;
+}
+
+/* Center Navbar Styling */
+#center-navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Similar to top navbar background */
+    width: 100%; /* Ensures it takes the full width */
+    position: fixed;
+    top: 60%; /* Vertically centered */
+    left: 50%; /* Horizontally centered */
+    transform: translate(-50%, -50%); /* Centered using translate */
+    z-index: 999; /* Ensure it is above other elements */
+    padding: 15px 0; /* Similar padding as top navbar */
+    text-align: center; /* Center the navbar items */
+}
+
+#center-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the list items */
+    margin: 0;
+    padding: 0;
+}
+
+#center-navbar ul li {
+    margin: 0 20px; /* Space between list items */
+}
+
+#center-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Match the font size of the top navbar */
+    transition: color 0.3s ease;
+}
+
+#center-navbar ul li a:hover {
+    color: lightblue; /* Match hover effect with top navbar */
+}
+
+
+/* Content Section */
+.content-section {
+    display: none; /* Hide all sections by default */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh; /* Lower half of the screen */
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.content-section.active {
+    display: flex; /* Show the active section */
+}
+
+/* College Card Styling */
+.college-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity: 0;
+}
+
+.college-card.visible {
+    opacity: 1;
+}
+
+/* Adjust College Info */
+.college-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.college-info img {
+    width: 350px; /* Reduced image size */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.college-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.college-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.college-details p {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.next-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Show Education Section Initially */
+#education {
+    display: flex;
+}
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    height: 50vh;
+}
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.skills-category {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.skills-category-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item a {
+    font-size: 40px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.skill-item a:hover {
+    color: #007BFF;
+}
+
+.skill-item small {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-category {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-category {
+        width: 100%;
+    }
+}
+.projects-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.projects-divider {
+    width: 50px;
+    height: 4px;
+    background-color: red;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.view-project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: darkred;
+}

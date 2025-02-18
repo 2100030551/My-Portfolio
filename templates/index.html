@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/favicon.ico" />
+<link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+  <div class="logo">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Make JETX clickable and redirect to home -->
+  <a href="http://127.0.0.1:5000/#home" style="text-decoration: none;">
+    <h1 style="font-family: 'Bebas Neue', sans-serif; color: red;">JETX</h1>
+  </a>
+</div>
+
+
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li> <!-- Added Projects link -->
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section (Wallpaper) -->
+    <section id="home">
+        <div class="home-content">
+            <div class="container">
+                <div class="name">TEJ<span>A</span>SR<span>I</span>TH</div>
+                <div class="title">TIRU<span>M</span>A<span>L</span>ASETTY</div>
+                <div class="description">
+                    I am a Computer Science &amp; Engineering graduate with a strong foundation in AI and Data Science.I'm passionate about solving complex problems and extracting data-driven insights. I'm excited to contribute to innovative projects that drive progress in the AI field.
+                </div>
+                <a href="your_resume_link.pdf" class="resume-button">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Button with Icon -->
+<a href="#" id="servicesButton" class="service-button">
+  <i class="fa fa-cogs"></i> Services
+</a>
+
+<!-- Modal (Pop-up) for Services -->
+<div id="servicesModal" class="modal">
+  <div class="modal-content">
+    <!-- Font Awesome Close Icon -->
+    <span class="close-button" id="closeModal"><i class="fa fa-times"></i></span>
+
+    <h2>My Services</h2>
+
+    <!-- Service List -->
+    <div class="services-list">
+      <div class="service-item">
+        <h3 class="service-title">Machine Learning 🤖, Deep Learning 🧠,Natural Language Processing 🗣️ </h3>
+        <p class="service-description">Develop predictive models and automated systems for smarter decision-making, build advanced deep learning models for image recognition and natural language processing (NLP) tasks, and create systems for sentiment analysis, chatbots, and text classification."</p>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-title">Data Engineering ⚙️</h3>
+        <p class="service-description">Optimize data storage and build data pipelines for smooth analytics.</p>
+      </div>
+      <div class="service-item">
+        <h3 class="service-title">Predictive Analytics 📈</h3>
+        <p class="service-description">Use statistical models to forecast future trends and behaviors.</p>
+      </div>
+      <div class="service-item">
+        <h3 class="service-title">AI for Automation ⚡</h3>
+        <p class="service-description">Automate business processes with AI-driven solutions to improve efficiency.</p>
+      </div>
+      <div class="service-item">
+        <h3 class="service-title">Data Visualization 📊</h3>
+        <p class="service-description">Create interactive data visualizations to enable data-driven decision making.</p>
+      </div>
+      <div class="service-item">
+        <h3 class="service-title">AI Strategy Consultation 🧑‍💼</h3>
+        <p class="service-description">Provide expert advice on AI and Data Science adoption for businesses.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Education Section -->
+<section id="education">
+    <div class="education-container">
+        <!-- Section Heading -->
+        <h2 class="education-heading">Education</h2>
+        <div class="education-divider"></div>
+
+        <!-- College Info Container -->
+        <div class="college-info-container">
+            <!-- College 1 -->
+            <div class="college-info">
+                <img src="static/3.jpeg" alt="College 1 Image">
+                <h3 class="college-name">Pursuing a degree at<br> KL University,Guntur from 2021 to 2025, with a current CGPA of 9.09.</h3>
+            </div>
+
+            <!-- College 2 -->
+            <div class="college-info">
+                <img src="static/2.jpeg" alt="College 2 Image">
+                <h3 class="college-name">Attended Narayana Junior College,Vijayawada from 2019 to 2021, achieving a percentage of 89%.</h3>
+            </div>
+
+            <!-- College 3 -->
+            <div class="college-info">
+                <img src="https://kkrgowtham.com/wp-content/uploads/2015/12/gudivada_branch1.jpg" alt="College 3 Image">
+                <h3 class="college-name">Completed schooling at<br> Dr. KKR Gowtham School,Gudiwada in 2019 with a CGPA of 10.0.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="skills-heading">Skills</h2>
+    <hr class="skills-divider"> <!-- Skills divider -->
+
+    <!-- Skills Container -->
+    <div class="skills-container">
+        <!-- Skill Items -->
+        <div class="skill-items">
+            <!-- Programming Languages -->
+            <div class="skill-item">
+                <a href="https://www.python.org/" target="_blank">
+                    <i class="fab fa-python"></i> <!-- Python icon -->
+                </a>
+                <small>Python</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    <i class="fab fa-java"></i> <!-- Java icon -->
+                </a>
+                <small>Java</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.sql.org/" target="_blank">
+                    <i class="fas fa-database"></i> <!-- SQL icon -->
+                </a>
+                <small>SQL</small>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skill-item">
+                <a href="https://scikit-learn.org/" target="_blank">
+                    <i class="fas fa-cogs"></i> <!-- Scikit-learn icon -->
+                </a>
+                <small>Scikit-learn</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.nltk.org/" target="_blank">
+                    <i class="fa-laptop-code"></i> <!-- NLTK icon -->
+                </a>
+                <small>NLTK</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.tensorflow.org/" target="_blank">
+                    <i class="fas fa-robot"></i> <!-- Alternative TensorFlow icon (robot) -->
+                </a>
+                <small>Tensor<br>Flow</br></small>
+            </div>
+            <div class="skill-item">
+                <a href="https://keras.io/" target="_blank">
+                    <i class="fas fa-brain"></i> <!-- Alternative Keras icon (brain) -->
+                </a>
+                <small>Keras</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://flask.palletsprojects.com/" target="_blank">
+                    <i class="fa-server"></i> <!-- Flask icon -->
+                </a>
+                <small>Flask</small>
+            </div>
+
+            <!-- Tools & Libraries -->
+            <div class="skill-item">
+                <a href="https://pandas.pydata.org/" target="_blank">
+                    <i class="fas fa-paw"></i> <!-- Pandas icon -->
+                </a>
+                <small>Pandas</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://numpy.org/" target="_blank">
+                    <i class="fa-share-alt"></i> <!-- NumPy icon -->
+                </a>
+                <small>NumPy</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://matplotlib.org/" target="_blank">
+                    <i class="fab fa-python"></i> <!-- Matplotlib icon -->
+                </a>
+                <small>Matplotlib</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://seaborn.pydata.org/" target="_blank">
+                    <i class="fas fa-water"></i> <!-- Seaborn icon -->
+                </a>
+                <small>Seaborn</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://jupyter.org/" target="_blank">
+                    <i class="fas fa-code"></i> <!-- Jupyter Notebooks icon -->
+                </a>
+                <small>Jupyter Notebooks</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.mysql.com/" target="_blank">
+                    <i class="fas fa-database"></i> <!-- MySQL icon -->
+                </a>
+                <small>MySQL</small>
+            </div>
+
+            <!-- Cloud/Big Data -->
+            <div class="skill-item">
+                <a href="https://aws.amazon.com/" target="_blank">
+                    <i class="fab fa-aws"></i> <!-- AWS icon -->
+                </a>
+                <small>AWS</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://colab.research.google.com/" target="_blank">
+                    <i class="fab fa-google"></i> <!-- Google Colab icon -->
+                </a>
+                <small>Google Colab</small>
+            </div>
+
+            <!-- Version Control -->
+            <div class="skill-item">
+                <a href="https://git-scm.com/" target="_blank">
+                    <i class="fab fa-git"></i> <!-- Git icon -->
+                </a>
+                <small>Git</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://github.com/" target="_blank">
+                    <i class="fab fa-github"></i> <!-- GitHub icon -->
+                </a>
+                <small>GitHub</small>
+            </div>
+
+            <!-- Additional Tools -->
+            <div class="skill-item">
+                <a href="https://spark.apache.org/" target="_blank">
+                    <i class="fab fa-java"></i> <!-- Spark icon -->
+                </a>
+                <small>Spark</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://powerbi.microsoft.com/" target="_blank">
+                    <i class="fas fa-chart-bar"></i> <!-- Power BI icon -->
+                </a>
+                <small>Power BI</small>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.anaconda.com/" target="_blank">
+                    <i class="fas fa-dragon"></i> <!-- Anaconda icon -->
+                </a>
+                <small>Anaconda</small>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2 class="projects-heading">Projects</h2>
+    <div class="projects-divider"></div> <!-- Divider for the Projects section -->
+    <div class="projects-container">
+        <div class="project">
+            <img src="static/orf.jpeg" alt="Ride Fare Prediction System" class="project-image"> <!-- Example image for project -->
+            <h3 class="project-title">Ride Fare Prediction System</h3>
+            <h1 class="project-description">A system that predicts ride fares using machine learning algorithms based on factors like distance, time, and location.</h1>
+            <a href="https://github.com/2100030551/ride-fare-prediction" class="view-project-btn">View Project</a> <!-- Link to the project -->
+        </div>
+        <div class="project">
+            <img src="static/mbl.jpg" alt="Movie Prediction System" class="project-image">
+            <h3 class="project-title">Movie Prediction System</h3>
+            <h1 class="project-description">An AI system accurately predicts a movie's success based on its genre, director, actors, and other factors.</h1>
+            <a href="https://github.com/2100030551/movie-recommendation" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project">
+            <img src="static/gr.jpg" alt="Gender Recognition Using Voice" class="project-image">
+            <h3 class="project-title">Gender Recognition Using Voice</h3>
+            <h1 class="project-description">A project that classifies gender based on voice features, using speech recognition and machine learning techniques.</h1>
+            <a href="https://github.com/2100030551" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project">
+            <img src="static/1.jpeg" alt="Sentiment Analysis Using Audio" class="project-image">
+            <h3 class="project-title">Sentiment Analysis Using Audio</h3>
+            <h1 class="project-description">This system analyzes audio input to determine if the speaker's tone is positive, negative, or neutral.</h1>
+            <a href="https://github.com/2100030551/sentiment-analysis" class="view-project-btn">View Project</a>
+        </div>
+    </div>
+</section>
+<!-- Certificates Section -->
+<div id="certificates">
+    <h2 class="certificates-heading">Certifications</h2>
+    <div class="certificates-divider"></div>
+
+    <!-- Certificates Container -->
+    <div class="certificates-container">
+        <!-- Certificate 1: Google TensorFlow -->
+        <div class="certificate">
+            <i class="fab fa-google tensorflow-icon"></i> <!-- Google TensorFlow Icon -->
+            <div class="certificate-description">
+                <p>TensorFlow Developer</p>
+                <a href="https://www.credential.net/d2f3b3a9-25a4-4974-a8e0-ce5da19efee9#acc.4Rz0bYvI" class="view-certificate-btn">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Certificate 2: AWS Cloud Practitioner -->
+        <div class="certificate">
+            <i class="fab fa-aws aws-icon"></i> <!-- AWS Cloud Practitioner Icon -->
+            <div class="certificate-description">
+                <p>AWS Cloud Practitioner</p>
+                <a href="https://www.credly.com/badges/42ff8f36-939c-46b0-821e-a513893beeab/public_url" class="view-certificate-btn">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Certificate 3: Salesforce AI Associate -->
+        <div class="certificate">
+            <i class="fab fa-salesforce salesforce-icon"></i> <!-- Salesforce AI Associate Icon -->
+            <div class="certificate-description">
+                <p>Salesforce AI Associate</p>
+                <a href="static/Cert5130054_AIAssociate_20241025.pdf" class="view-certificate-btn">View Certificate</a>
+            </div>
+        </div>
+
+        <!-- Certificate 4: RedHat -->
+        <div class="certificate">
+            <i class="fab fa-redhat redhat-icon"></i> <!-- RedHat Icon -->
+            <div class="certificate-description">
+                <p>RedHat CEAD(EX183)</p>
+                <a href="https://www.credly.com/badges/56cfc8ec-b78e-4340-9c32-f7121094a219/public_url" class="view-certificate-btn">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="research">
+    <h2 class="research-heading">Research & Publications</h2>
+    <div class="research-divider"></div>
+
+    <div class="publication">
+        <!-- Title of the Publication -->
+        <h3 class="publication-title">Emotion Detection Based on Psychological Signals</h3>
+
+        <!-- Description of the Publication -->
+        <p class="publication-description">
+            This publication explores the use of machine learning algorithms to detect and analyze human emotions based on psychological signals. It covers various techniques such as EEG signal analysis, facial expression recognition, and other biometric data processing to understand human emotional responses. The research integrates AI to create more accurate and reliable emotion detection systems.
+        </p>
+
+        <!-- Image for Publication -->
+        <img src="static/Untitr.jpg" alt="Research Publication Image" class="publication-image">
+
+        <!-- View Publication Button -->
+        <a href="https://eudoxuspress.com/index.php/pub/article/view/355?articlesBySimilarityPage=15" target="_blank" class="view-publication-btn">View Publication</a>
+    </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="contact-heading">Contact</h2>
+    <div class="projects-divider"></div>
+    <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <!-- Wrap both the icon and the text inside the <a> tag -->
+                <a href="mailto:tejasrith@gmail.com">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p>gmail.com</p>
+                </a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <!-- Wrap both the icon and the text inside the <a> tag -->
+                <a href="https://www.linkedin.com/in/tirumalasetty-tejasrith-89873224a/" target="_blank">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <p>LinkedIn Profile</p>
+                </a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <!-- Wrap both the icon and the text inside the <a> tag -->
+                <a href="https://github.com/2100030551" target="_blank">
+                    <i class="fab fa-github contact-icon"></i>
+                    <p>GitHub Profile</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="static/script.js"></script>
+</body>
+</html>
