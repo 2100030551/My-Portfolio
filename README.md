@@ -1,14 +1,15 @@
 # Portfolio
 
-Welcome to my personal portfolio! This is a single-page, non-scrollable website where you can explore my work, skills, and educational background.
+Welcome to my personal portfolio! This is a single-page, scrollable website where you can explore my work, skills, and educational background.
 ## Portfolio Screenshot
 ![Portfolio Screenshot](static/sc.png)
 
 ## Features
-- **Navbar**: Contains links to different sections of the portfolio including Education, Skills, and Projects.
-- **Interactive Design**: Content for each section is displayed when you click on the respective navbar item.
-- **Mac-like Aesthetic**: Styled to resemble the clean and minimalistic design of Mac websites.
-- **Responsive**: Optimized for different screen sizes.
+- **Smooth Scrolling**: Enjoy a smooth, scrollable experience with easy navigation through the entire portfolio.
+- **Interactive Sections**: Each section, including Education, Skills, and Projects, reveals content as you scroll, making it a dynamic experience.
+- **Sticky Navbar**: The navigation bar stays fixed at the top of the page as you scroll, allowing easy access to all sections.
+- **Active Section Highlight**: As you scroll, the navbar dynamically highlights the current section, providing clear visual cues for navigation.
+- **Responsive Design**: Optimized for a variety of screen sizes to ensure an optimal viewing experience on desktop, tablet, and mobile.
 
 ## Technologies Used
 - **HTML**: For creating the structure of the page.
